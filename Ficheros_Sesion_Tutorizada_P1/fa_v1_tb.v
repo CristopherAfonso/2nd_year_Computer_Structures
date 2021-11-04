@@ -5,8 +5,8 @@
 `timescale 1ns/10ps
 
 module fa_v1_tb;
-reg t_a,t_b, t_c_in;
-wire t_sum,t_carry_c_out;
+  reg t_a, t_b, t_c_in;
+  wire t_sum,t_carry_c_out;
 
 // module fa(output wire sum, output wire c_out, input wire a, input wire b, input wire c_in);
 
@@ -29,42 +29,42 @@ wire t_sum,t_carry_c_out;
                 t_a = 0;
                 t_b = 0;
                 t_c_in = 0;
-                #20ns;
+                #20;
 
                 t_a = 0;
                 t_b = 0;
                 t_c_in = 1;
-                #20ns;
+                #20;
 
                 t_a = 0;
                 t_b = 1;
                 t_c_in = 0;
-                #20ns;
+                #20;
 
                 t_a = 0;
                 t_b = 1;
                 t_c_in = 1;
-                #20ns;
+                #20;
 
                 t_a = 1;
                 t_b = 0;
                 t_c_in = 0;
-                #20ns;
+                #20;
 
                 t_a = 1;
                 t_b = 0;
                 t_c_in = 1;
-                #20ns;
+                #20;
 
                 t_a = 1;
                 t_b = 1;
                 t_c_in = 0;
-                #20ns;
+                #20;
 
                 t_a = 1;
                 t_b = 1;
                 t_c_in = 1;
-                #20ns;
+                #20;
 
                 $finish;
 
