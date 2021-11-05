@@ -4,7 +4,7 @@
 // Como este archivo es dado por el profesorado, no lo he modificado y no
 // le hago un test bench porque está bien
 
-module mux2_1(output wire out, input wire a, input wire b, input wire s);
+module mux2_4(output wire [3:0] out, input wire [3:0] a, input wire [3:0] b, input wire s);
 
 	assign out = s ? b : a; //oper. condicional de C, sintaxis [condicion ? valor_si_cierta : valor_si_falsa] 
 
